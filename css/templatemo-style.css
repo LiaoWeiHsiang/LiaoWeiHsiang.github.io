@@ -242,6 +242,7 @@ video::-webkit-media-controls {
   color: #121212;
   letter-spacing: 1px;
   margin-top: 0px;
+  margin-left: 200px;
   margin-bottom: 30px;
 }
 
@@ -714,7 +715,6 @@ footer a {
 
   .first-content p {
     margin: 0px 30px;
-    width: 300px;
   }
 
   .second-slide .left-image {
