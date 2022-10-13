@@ -242,7 +242,6 @@ video::-webkit-media-controls {
   color: #121212;
   letter-spacing: 1px;
   margin-top: 0px;
-  margin-left: 100px;
   margin-bottom: 30px;
 }
 
@@ -637,7 +636,7 @@ footer a {
 ========================================
 */
 
-@media (max-width: 50px){
+@media (max-width: 850px){
   .cd-slider-nav ul li h6 {
     font-size: 13px;
     text-transform: uppercase;
