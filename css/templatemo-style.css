@@ -636,7 +636,7 @@ footer a {
 ========================================
 */
 
-@media (max-width: 450px){
+@media (max-width: 850px){
   .cd-slider-nav ul li h6 {
     font-size: 13px;
     text-transform: uppercase;
@@ -716,7 +716,7 @@ footer a {
     margin: 0px 30px;
   }
 
-  .second-slide .left-image {
+  .left-image {
     padding-right: 15px!important;
   }
 
