@@ -204,7 +204,7 @@ video::-webkit-media-controls {
 ----- FIRST SLIDE -----
 =======================
 */
-/* 
+
 .first-slide {
   text-align: center;
 }
@@ -242,6 +242,7 @@ video::-webkit-media-controls {
   color: #121212;
   letter-spacing: 1px;
   margin-top: 0px;
+  margin-left: 100px;
   margin-bottom: 30px;
 }
 
@@ -255,7 +256,7 @@ video::-webkit-media-controls {
 
 .first-content .primary-button {
   margin-top: 30px;
-} */
+}
 
 
 
