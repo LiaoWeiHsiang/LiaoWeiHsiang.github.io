@@ -250,7 +250,7 @@ video::-webkit-media-controls {
 }
 
 .first-content p {
-  margin: 0px 500px;
+  margin: 0px 120px;
 }
 
 .first-content .primary-button {
@@ -714,6 +714,7 @@ footer a {
 
   .first-content p {
     margin: 0px 30px;
+    width: 300px;
   }
 
   .second-slide .left-image {
