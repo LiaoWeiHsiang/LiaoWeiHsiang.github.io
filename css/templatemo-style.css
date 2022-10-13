@@ -250,7 +250,7 @@ video::-webkit-media-controls {
 }
 
 .first-content p {
-  margin: 0px 120px;
+  margin: 0px 50px;
 }
 
 .first-content .primary-button {
@@ -708,8 +708,8 @@ footer a {
   }
 
   .first-content h4 {
-    margin-left: 50px;
-    margin-right: 50px; 
+    margin-left: 15px;
+    margin-right: 15px; 
   }
 
   .first-content p {
