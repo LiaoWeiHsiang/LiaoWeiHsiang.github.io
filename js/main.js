@@ -192,6 +192,7 @@
   Lightbox.prototype.start = function($link) {
     var self    = this;
     var $window = $(window);
+    var qwe;
 
     $window.on('resize', $.proxy(this.sizeOverlay, this));
 
