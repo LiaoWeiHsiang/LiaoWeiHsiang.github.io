@@ -581,16 +581,22 @@ body.offcanvas {
   /* display: block; */
   /* width: 2%;
   height: 2%; */
-  width: 50% !important;;
-  height: 50% !important;;
-  float: left; }
-
+  width: 100% !important;;
+  height: 100% !important;;
+  float: left;
+  margin-bottom: 10px; }
+.timeline-label {
+  /* float: right;  */
+  width: 450px !important;; 
+  height: 210px !important;; 
+  margin-bottom: 15px;
+}
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
   position: relative;
   background: #f2f3f7;
   padding: 1.5em;
-  margin-left: 400px;     /*60*/
+  margin-left: 0;     /*60*/
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
