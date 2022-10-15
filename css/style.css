@@ -581,8 +581,8 @@ body.offcanvas {
   /* display: block; */
   /* width: 2%;
   height: 2%; */
-  width: 380px !important;;
-  height: 230px !important;;
+  width: 380px !important;
+  height: 230px !important;
   float: left;
   margin-bottom: 10px; 
 }
