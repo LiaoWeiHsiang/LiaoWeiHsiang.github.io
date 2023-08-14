@@ -26,7 +26,11 @@
         /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
         @media (max-width: 768px) {
             #pdf {
-                height: 100vh; /* Set the height to 100% of the viewport height */
+                /* height: 100vh; */
+                width: 100%;
+                height: auto; /* Allow the iframe to adjust its height based on content */
+                max-height: 100vh; /* Set a maximum height for the iframe */
+                border: none;
             }
         }
     </style>
