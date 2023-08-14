@@ -2,22 +2,6 @@
 <html>
 <head>
     <title>Recent Projects</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script>
-        // Check if the user is on a mobile device
-        function isMobileDevice() {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        }
-
-        // Function to load PDF based on device type
-        function loadPDF() {
-            if (isMobileDevice()) {
-                document.getElementById("pdf").src = "https://drive.google.com/file/d/1SpMo0R__TahedavKrCt5jl6dpmTgFRRr/view?usp=drive_link";
-            } else {
-                document.getElementById("pdf").data = "mypdf.pdf";
-            }
-        }
-    </script>
     <style>
         body, html {
             margin: 0;
@@ -30,19 +14,15 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            overflow: auto; /* Allow scrolling within the container */
         }
         #pdf {
             width: 100%;
-            height: 600px;
-            display: block;
-            border: none; /* Remove border around iframe */
+            height: 100%;
         }
     </style>
 </head>
-<body onload="loadPDF()">
+<body>
     <div id="pdf-container">
-        <object id="pdf" type="application/pdf"></object>
+        <embed id="pdf" src="./recentProjects.pdf" type="application/pdf">
     </div>
 </body>
-</html>
