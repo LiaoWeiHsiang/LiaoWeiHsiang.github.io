@@ -1,8 +1,28 @@
+
+要在 HTML 页面加载时检查是否为移动设备，你可以使用 JavaScript 来检测用户代理字符串（User Agent String）。用户代理字符串包含有关用户浏览器和设备的信息，你可以根据这些信息来判断是否是移动设备。以下是一个示例代码：
+
+html
+Copy code
 <!DOCTYPE html>
 <html>
 <head>
     <title>Recent Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // Check if the user is on a mobile device
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        // Function to load PDF based on device type
+        function loadPDF() {
+            if (isMobileDevice()) {
+                document.getElementById("pdf").src = "https://drive.google.com/file/d/1SpMo0R__TahedavKrCt5jl6dpmTgFRRr/view?usp=drive_link";
+            } else {
+                document.getElementById("pdf").data = "mypdf.pdf";
+            }
+        }
+    </script>
     <style>
         body, html {
             margin: 0;
@@ -19,25 +39,15 @@
         }
         #pdf {
             width: 100%;
-            height: 100%;
+            height: 600px;
+            display: block;
             border: none; /* Remove border around iframe */
-        }
-        
-        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
-        @media (max-width: 768px) {
-            #pdf {
-                /* height: 100vh; */
-                width: 100%;
-                height: auto; /* Allow the iframe to adjust its height based on content */
-                max-height: 100vh; /* Set a maximum height for the iframe */
-                border: none;
-            }
         }
     </style>
 </head>
-<body>
+<body onload="loadPDF()">
     <div id="pdf-container">
-        <iframe id="pdf" src="./recentProjects.pdf"></iframe>
+        <object id="pdf" type="application/pdf"></object>
     </div>
 </body>
 </html>
